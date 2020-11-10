@@ -16,8 +16,8 @@ currdir=`pwd`
 export sdk_dir="${PKTGEN_SDK:-$currdir}"
 export target_dir="${PKTGEN_TARGET:-usr}"
 export build_dir="${PKTGEN_BUILD_DIR:-Builddir}"
-export lua_enabled="-Denable_lua=false"
-export gui_enabled="-Denable_gui=false"
+export lua_enabled="-Denable_lua=true"
+export gui_enabled="-Denable_gui=true"
 
 if [[ -n ${enable_lua} ]]; then
 	export lua_enabled="-Denable_lua=true"
